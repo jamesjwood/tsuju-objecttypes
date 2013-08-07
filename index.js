@@ -322,6 +322,17 @@ var userType = function () {
     indexed: false
   });
   that.questionDefinitions.push({
+    name: 'encryptedPrivatePEM',
+    title: 'encryptedPrivatePEM',
+    description: 'encryptedPrivatePEM',
+    type: 'text',
+    access: 'readwrite',
+    defaultValue: '',
+    validationFunction: exports.validation.required('encryptedPrivatePEM'),
+    toParent: that,
+    indexed: false
+  });
+  that.questionDefinitions.push({
     name: 'fullName',
     title: 'full name',
     description: 'full name',

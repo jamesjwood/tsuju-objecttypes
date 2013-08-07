@@ -4,8 +4,11 @@
   "description": "ERROR: No README.md file found!",
   "main": "./index",
   "readmeFilename": "README.md",
-  "repository": "",
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesjwood/objectTypes.git"
+  },
+  "author": "James Wood <james.wood@datatransparency.com>",
   "license": "BSD",
   "dependencies": {
     "async": "~0.2.7",
