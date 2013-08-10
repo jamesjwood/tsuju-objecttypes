@@ -78,7 +78,9 @@ exports.type = function (typeName) {
     description: '_id',
     type: 'identity',
     access: 'readonly',
-    defaultValue: exports.uuid,
+    defaultValue: function(){
+      return typeName + '_' + exports.uuid();
+    },
     validationfunction: null,
     toParent: that,
     indexed: true,
@@ -329,6 +331,28 @@ var userType = function () {
     access: 'readwrite',
     defaultValue: '',
     validationFunction: exports.validation.required('encryptedPrivatePEM'),
+    toParent: that,
+    indexed: false
+  });
+  that.questionDefinitions.push({
+    name: 'certificate',
+    title: 'certificate',
+    description: 'certificate',
+    type: 'text',
+    access: 'readwrite',
+    defaultValue: null,
+    validationFunction: exports.validation.required('certificate'),
+    toParent: that,
+    indexed: false
+  });
+  that.questionDefinitions.push({
+    name: 'dbProvisioned',
+    title: 'dbProvisioned',
+    description: 'dbProvisioned',
+    type: 'yesno',
+    access: 'readwrite',
+    defaultValue: false,
+    validationFunction: exports.validation.required('dbProvisioned'),
     toParent: that,
     indexed: false
   });
