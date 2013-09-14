@@ -15,6 +15,15 @@
     "utils": "git+ssh://git@github.com/jamesjwood/utils.git",
     "core": "git+ssh://git@github.com/jamesjwood/core.git"
   },
+  "devDependencies": {
+    "mocha": "1.10.0",
+    "grunt": "0.4.1",
+    "grunt-contrib": "0.7.0",
+    "grunt-simple-mocha": "0.4.0",
+    "grunt-shell": "0.3.0",
+    "grunt-karma": "0.4.5",
+    "browserify": "~2.29.1"
+  },
   "scripts": {
     "test": "mocha test"
   }

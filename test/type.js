@@ -18,7 +18,7 @@ describe('objectTypes.type', function () {
    it('objectTypes.type: should have a name and questionDefinitions and calculationDefinitions', function (done) {
     var type = lib('customType');
     assert.equal(type.name, 'customType');
-    assert.ok(type.questionDefinitions)
+    assert.ok(type.questionDefinitions);
     assert.ok(type.calculationDefinitions);
 
     assert.equal(type.newTitle, 'new customType');
@@ -46,5 +46,5 @@ describe('objectTypes.type', function () {
     var titleDetail = type.getQuestion('titleDetail');
     assert.ok(titleDetail, 'should have an titleDetail');
     done();
-  })
+  });
 });

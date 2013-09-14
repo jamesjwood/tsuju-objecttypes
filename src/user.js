@@ -18,7 +18,7 @@ module.exports = function(){
     defaultValue: '',
     validationFunction: validation.required('username'),
     toParent: that,
-    indexed: false
+    indexed: true
   });
   that.questionDefinitions.push({
     name: 'encryptedPrivatePEM',
@@ -94,4 +94,4 @@ module.exports = function(){
     return o.fullName;
   };
   return that;
-}
+};
