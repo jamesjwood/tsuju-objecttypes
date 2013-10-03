@@ -12,7 +12,7 @@
   "license": "BSD",
   "dependencies": {
     "async": "~0.2.7",
-    "utils": "git+ssh://git@github.com/jamesjwood/utils.git",
+    "utils": "git://github.com/jamesjwood/utils.git",
     "core": "git+https://d5964b9e1dcc7be9af62cb9138a7b60d479f3a06:x-oauth-basic@github.com/jamesjwood/core.git"
   },
   "devDependencies": {
