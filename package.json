@@ -11,7 +11,7 @@
   "author": "James Wood <james.wood@datatransparency.com>",
   "license": "BSD",
   "dependencies": {
-    "async": "~0.2.7",
+    "async": "0.2.x",
     "utils": "git://github.com/jamesjwood/utils.git",
     "core": "git+https://d5964b9e1dcc7be9af62cb9138a7b60d479f3a06:x-oauth-basic@github.com/jamesjwood/core.git"
   },
