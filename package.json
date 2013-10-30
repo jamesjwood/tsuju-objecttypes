@@ -13,16 +13,16 @@
   "dependencies": {
     "async": "0.2.x",
     "utils": "git://github.com/jamesjwood/utils.git",
-    "core": "git+https://d5964b9e1dcc7be9af62cb9138a7b60d479f3a06:x-oauth-basic@github.com/jamesjwood/core.git"
+    "core": "git://github.com/jamesjwood/core.git"
   },
   "devDependencies": {
-    "mocha": "1.10.0",
-    "grunt": "0.4.1",
-    "grunt-contrib": "0.7.0",
-    "grunt-simple-mocha": "0.4.0",
-    "grunt-shell": "0.3.0",
-    "grunt-karma": "0.4.5",
-    "browserify": "~2.29.1"
+    "mocha": "1.13.x",
+    "grunt": "0.4.x",
+    "grunt-contrib": "0.8.x",
+    "grunt-simple-mocha": "0.4.x",
+    "grunt-shell": "0.5.x",
+    "grunt-karma": "0.6.x",
+    "browserify": "2.35.x"
   },
   "scripts": {
     "test": "mocha test"
