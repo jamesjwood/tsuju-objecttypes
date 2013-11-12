@@ -1,33 +1,35 @@
 {
-  "name": "objectTypes",
-  "version": "0.0.0",
-  "description": "ERROR: No README.md file found!",
-  "main": "./index",
-  "readmeFilename": "README.md",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jamesjwood/objectTypes.git"
-  },
-  "author": "James Wood <james.wood@datatransparency.com>",
-  "license": "BSD",
-  "dependencies": {
-    "async": "0.2.x",
-    "utils": "git://github.com/jamesjwood/utils.git",
-    "core": "git://github.com/jamesjwood/core.git"
-  },
-  "devDependencies": {
-    "grunt": "0.4.x",
-    "grunt-simple-mocha": "0.4.x",
-    "grunt-shell": "0.5.x",
-    "grunt-karma": "0.6.x",
-    "browserify": "2.35.x",
-    "grunt-contrib-jshint": "0.7.x",
-    "grunt-contrib-watch": "0.5.x",
-    "karma-mocha": "0.1.x",
-    "karma-safari-launcher": "0.1.x"
-  },
-  "scripts": {
-    "test": "mocha test",
-    "link": "npm link utils;npm link core; npm link;"
-  }
+    "name": "objectTypes",
+    "version": "0.0.0-4",
+    "description": "ERROR: No README.md file found!",
+    "main": "./index",
+    "readmeFilename": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jamesjwood/objectTypes.git"
+    },
+    "author": "James Wood <james.wood@datatransparency.com>",
+    "license": "BSD",
+    "dependencies": {
+        "async": "0.2.x",
+        "utils": "git://github.com/jamesjwood/utils.git",
+        "core": "git://github.com/jamesjwood/core.git"
+    },
+    "devDependencies": {
+        "grunt": "0.4.x",
+        "grunt-simple-mocha": "0.4.x",
+        "grunt-shell": "0.5.x",
+        "grunt-karma": "0.6.x",
+        "browserify": "2.35.x",
+        "grunt-contrib-jshint": "0.7.x",
+        "grunt-contrib-watch": "0.5.x",
+        "karma-mocha": "0.1.x",
+        "karma-safari-launcher": "0.1.x",
+        "matchdep": "~0.3.0",
+        "grunt-bumpx": "~0.1.5"
+    },
+    "scripts": {
+        "test": "mocha test",
+        "link": "rm -R node_modules; npm link getWatchers; npm link utils;npm link core; npm link;"
+    }
 }
