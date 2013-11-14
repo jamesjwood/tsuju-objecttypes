@@ -1,6 +1,6 @@
 {
     "name": "objectTypes",
-    "version": "0.0.0-31",
+    "version": "0.0.0-39",
     "description": "ERROR: No README.md file found!",
     "main": "./index",
     "readmeFilename": "README.md",
@@ -30,6 +30,6 @@
     },
     "scripts": {
         "test": "mocha test",
-        "link": "rm -R node_modules; npm link getWatchers; npm link utils;npm link core; npm link;"
+        "link": "rm -R node_modules; npm link; npm link getWatchers; npm link utils;npm link core;"
     }
 }
