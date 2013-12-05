@@ -12,3 +12,4 @@ exports.userList = require('./src/userList.js')();
 exports.list = require('./src/list.js')();
 exports.task = require('./src/task.js')();
 exports.share = require('./src/share.js')();
+exports.docLocation = require('./src/docLocation.js')();
