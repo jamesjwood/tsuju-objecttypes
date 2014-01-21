@@ -97,6 +97,6 @@ module.exports = function(grunt) {
 require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 grunt.registerTask('install', [ 'shell:makeStage']);
 grunt.registerTask('test', ['jshint', 'simplemocha','browserify', 'karma']);
-grunt.registerTask('development', ['bumpup:prerelease']);
-grunt.registerTask('production', ['bumpup:patch']);
+grunt.registerTask('development', []);
+grunt.registerTask('production', []);
 };
