@@ -53,6 +53,17 @@ module.exports = function(grunt) {
         browsers: ['Safari'] //, 'Firefox', 'Safari', 'Opera'
       }
     },
+    browserify: {
+      test: {
+        files: {
+          './stage/test.js': ['./test.js'],
+        },
+        options: {
+          debug: true,
+          ignore: ['domain', 'loggly', 'ga', 'universal-analytics']
+        },
+      }
+    },
     shell: {
       makeStage: {
         command: 'rm -rf stage; mkdir stage',
@@ -84,8 +95,8 @@ module.exports = function(grunt) {
 
 
 require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
-
-grunt.registerTask('test', ['jshint', 'simplemocha', 'shell:makeStage','shell:browserify', 'karma']);
+grunt.registerTask('install', [ 'shell:makeStage']);
+grunt.registerTask('test', ['jshint', 'simplemocha','browserify', 'karma']);
 grunt.registerTask('development', ['bumpup:prerelease']);
 grunt.registerTask('production', ['bumpup:patch']);
 };
