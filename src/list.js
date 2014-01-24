@@ -1,7 +1,7 @@
-var listbroCore = require('core');
+var listbroCore = require('tsuju-core');
 var async = require('async');
 
-var utils = require('utils');
+var utils = require('tsuju-utils');
 
 var basicType = require('./type.js');
 var validation = require('./validation.js');

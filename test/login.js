@@ -6,7 +6,7 @@
 /*global after */
 
 var assert = require('assert');
-var utils= require('utils');
+var utils= require('tsuju-utils');
 
 var masterLog = utils.log().wrap('objectTypes.type');
 
