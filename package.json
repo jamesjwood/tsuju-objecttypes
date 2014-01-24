@@ -1,5 +1,5 @@
 {
-  "name": "objectTypes",
+  "name": "tsuju-objecttypes",
   "version": "0.0.3-0",
   "description": "ERROR: No README.md file found!",
   "main": "./index",
@@ -12,8 +12,8 @@
   "license": "BSD",
   "dependencies": {
     "async": "0.2.x",
-    "utils": "git://github.com/jamesjwood/utils.git",
-    "core": "git://github.com/jamesjwood/core.git"
+    "tsuju-utils": "x",
+    "tsuju-core": "x"
   },
   "devDependencies": {
     "grunt": "0.4.x",
@@ -32,6 +32,6 @@
   "scripts": {
     "install": "grunt install",
     "test": "grunt test",
-    "link": "rm -R node_modules; npm link; npm link getWatchers; npm link utils;npm link core;"
+    "link": "rm -R node_modules; npm link; npm link tsuju-utils;npm link tsuju-core;"
   }
 }
